@@ -1,0 +1,561 @@
+
+<html lang="en" style="" class=" js flexbox flexboxlegacy canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers no-applicationcache svg inlinesvg smil svgclippaths"><head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Kingdom Rush official website! The classic tower defense game with orcs, troll, evil wizards, fantasy creatures and epic battles. Play on iOS, Android and Flash.">
+    <title>Kingdom Rush</title>
+    <link href="Content/bootstrap.css" rel="stylesheet">
+    <link rel="icon" type="image/png" href="favicon.ico">
+    <link href="Content/blueimp-gallery.css" rel="stylesheet">
+    <link href="Content/bootstrap-image-gallery.css" rel="stylesheet">
+    <link href="Content/generics.css" rel="stylesheet">
+    <link href="Content/main.css" rel="stylesheet">
+    <link href="Content/kingdomrush.classic.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Titan+One" rel="stylesheet" type="text/css">
+    <script src="Scripts/Vendor/modernizr-2.6.2.js"></script>
+</head>
+<body style="">
+    <div id="blueimp-gallery" class="blueimp-gallery blueimp-gallery-controls" data-usebootstrapmodal="false">
+        <!-- The container for the modal slides -->
+        <div class="slides"></div>
+        <!-- Controls for the borderless lightbox -->
+        <h3 class="title"></h3>
+        <a class="prev">‹</a>
+        <a class="next">›</a>
+        <a class="close">×</a>
+        <a class="play-pause"></a>
+        <ol class="indicator"></ol>
+        <!-- The modal dialog, which will be used to wrap the lightbox content -->
+        <div class="modal fade">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" aria-hidden="true">×</button>
+                        <h4 class="modal-title"></h4>
+                    </div>
+                    <div class="modal-body next"></div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default pull-left prev">
+                            <i class="glyphicon glyphicon-chevron-left"></i>
+                            Previous
+                        </button>
+                        <button type="button" class="btn btn-primary next">
+                            Next
+                            <i class="glyphicon glyphicon-chevron-right"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--[if lt IE 7]>
+        <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> or <a href="https://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+    <![endif]-->
+    <div class="main-top-bg">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 col-lg-offset-1">
+                    <div class="navbar navbar-kr">
+                        <table class="w100">
+                            <tbody><tr>
+                                <td>
+                                    <div class="hidden-xs" style="width:120px;">
+                                        <a class="p-h-s vmiddle navbar-separator dib" href="">
+                                            <img class="m-t-s vmiddle" src="Images/icons/icon-home.png">
+                                        </a>
+                                        <img class="dib vmiddle img-responsive" src="Images/icons/icon-get-it-now.png">
+                                    </div>
+                                    <div class="visible-xs" style="width:60px;">
+                                        <a class="p-h-s vmiddle navbar-separator dib" href="">
+                                            <img class="m-t-s vmiddle" src="Images/icons/icon-home.png">
+                                        </a>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="w100 hidden-xs">
+                                        <a class="dib" style="width:24%" target="_blank" href="https://itunes.apple.com/us/app/kingdom-rush-hd/id489265199?mt=8&amp;uo=4&amp;at=11l5VB&amp;ct=KR-Home">
+                                            <img class="dib img-responsive" src="Images/platforms/badge-app-store.png">
+                                        </a>
+                                        <a class="dib" style="width:24%" target="_blank" href="https://play.google.com/store/apps/details?id=com.ironhidegames.android.kingdomrush">
+                                            <img class="dib img-responsive" src="Images/platforms/badge-google-play.png">
+                                        </a>
+                                        <a class="dib" style="width:24%" target="_blank" href="https://www.amazon.com/Kingdom-Rush-Kindle-Tablet-Edition/dp/B00A6RCSKC">
+                                            <img class="dib img-responsive" src="Images/platforms/badge-amazon.png">
+                                        </a>
+                                        <a class="dib" style="width:24%" target="_blank" href="https://store.steampowered.com/app/246420/">
+                                            <img class="dib img-responsive" src="Images/platforms/badge-steam.png">
+                                        </a>
+                                    </div>
+                                    <div class="visible-xs">
+                                        <a class="dib" style="width:22%" target="_blank" href="https://itunes.apple.com/us/app/kingdom-rush-hd/id489265199?mt=8&amp;uo=4&amp;at=11l5VB&amp;ct=KR-Home">
+                                            <img class="dib img-responsive" src="Images/platforms/badge-app-store-small.png">
+                                        </a>
+                                        <a class="dib" style="width:22%" target="_blank" href="https://play.google.com/store/apps/details?id=com.ironhidegames.android.kingdomrush">
+                                            <img class="dib img-responsive" src="Images/platforms/badge-google-play-small.png">
+                                        </a>
+                                        <a class="dib" style="width:22%" target="_blank" href="https://www.amazon.com/Kingdom-Rush-Kindle-Tablet-Edition/dp/B00A6RCSKC">
+                                            <img class="dib img-responsive" src="Images/platforms/badge-amazon-small.png">
+                                        </a>
+                                        <a class="dib" style="width:22%" target="_blank" href="https://steamcommunity.com/sharedfiles/filedetails/?id=96030044">
+                                            <img class="dib img-responsive" src="Images/platforms/badge-steam-small.png">
+                                        </a>
+                                    </div>
+                                </td>
+                                <td class="hidden-xs" style="width:200px;">
+                                    <div class="" style="height:64px; overflow:hidden;">
+                                        <img src="Images/corporate/kr-frontiers-promo-out-now.png" style="padding-right:151px">
+                                        <a href="https://www.kingdomrushfrontiers.com/home.html">
+                                            <img class="abs top right" src="Images/corporate/kr-frontiers-promo-image.png">
+                                        </a>
+                                    </div>
+                                </td>
+                                <td class="visible-xs" style="width:160px;">
+                                    <div class="">
+                                        <a href="https://www.kingdomrushfrontiers.com/home.html">
+                                            <img class="abs top right" src="Images/corporate/kr-frontiers-promo-image.png">
+                                        </a>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody></table>
+                    </div>
+                </div>
+            </div>
+        </div> <!-- /container -->
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-lg-10 col-lg-offset-1 oh rel">
+                    <div class="rel oh z text-center logo-responsive">
+                        <a href="/home.html"><img class="w30 mma" src="Images/corporate/kr-logo.png"></a>
+                    </div>
+                    <div class="rel">
+                        <img class="img-responsive mma" src="Images/background/screen-trailer.png">
+                        <div class="abs main-panel-container">
+                            <div class="video-container screen-stroke abs">
+                                <iframe width="614" height="355" src="https://www.youtube.com/embed/lf353MDQUc8?rel=0&amp;wmode=transparent" frameborder="0" allowfullscreen=""></iframe>
+                            </div>
+                            <div class="social-container right text-center menu-bar">
+                                <a href="https://twitter.com/ironhidegames" target="_blank">
+                                    <img class="img-responsive mma" src="Images/icons/social-twitter-flat.png">
+                                    <h6 class="hidden-xs ">twitter</h6>
+                                </a>
+                                <br class="hidden-sm">
+                                <a href="https://www.facebook.com/ironhidegames" target="_blank">
+                                    <img class="img-responsive mma" src="Images/icons/social-facebook-flat.png">
+                                    <h6 class="hidden-xs ">facebook</h6>
+                                </a>
+                                <br class="hidden-sm">
+                                <a href="https://www.youtube.com/user/IRONHIDEGAMES" target="_blank">
+                                    <img class="img-responsive mma" src="Images/icons/social-youtube-flat.png">
+                                    <h6 class="hidden-xs ">youtube</h6>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="paper-bg">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 col-lg-offset-1">
+                    <div class="container">
+                        <div class="row m-v-m">
+                            <div class="col-sm-6 text-center">
+                                <h2 class="title">Reviews</h2>
+                                <div id="carousel-reviews" class="carousel autosize slide m-b-xxl">
+                                    <!-- Wrapper for slides -->
+                                    <div class=" col-sm-10 col-sm-offset-1">
+                                        <div class="carousel-inner">
+                                            <div class="item active">
+                                                <p class="description m-h-xxxl">
+                                                    <a href="https://jayisgames.com/archives/2011/07/kingdom_rush.php" target="_blank">
+                                                        "Jayisgames: Kingdom Rush is a real winner and a serious contender to wear the crown for the defense genre."
+                                                    </a>
+                                                </p>
+                                            </div>
+                                            <div class="item">
+                                                <p class="description m-h-xxxl">
+                                                    <a href="https://www.flashmush.com/2011/07/flash-game-review-kingdom-rush.html" target="_blank">
+                                                        Flashmush: From the great graphics to the extreme level of detail, Kingdom Rush is a game you can't miss out on!
+                                                    </a>
+                                                </p>
+                                            </div>
+                                            <div class="item">
+                                                <p class="description m-h-xxxl">
+                                                    <a href=" https://slidetoplay.com/review/kingdom-rush-ipad-review/" target="_blank">
+                                                        Slidetoplay: Kingdom Rush is a beaut of a tower defense game, with new ideas that make it feel extremely polished and refined.
+                                                    </a>
+                                                </p>
+                                            </div>
+                                            <div class="item">
+                                                <p class="description m-h-xxxl">
+                                                    <a href="https://gamezebo.com/games/kingdom-rush/review/">
+                                                        GameZebo: This is easily one of the best tower defense games currently in the App Store.
+                                                    </a>
+                                                </p>
+                                            </div>
+                                            <div class="item">
+                                                <p class="description m-h-xxxl">
+                                                    <a href="https://ign.com/articles/2012/01/31/kingdom-rush-review/">
+                                                        IGN: Kingdom Rush is an instant classic and is guaranteed to turn up on 2012 "best of" lists.
+                                                    </a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                    <!-- Controls -->
+                                    <a class="carousel-control left" href="#carousel-reviews" data-slide="prev">
+                                        <span class="ironhide-chevron-left"></span>
+                                    </a>
+                                    <a class="carousel-control right" href="#carousel-reviews" data-slide="next">
+                                        <span class="ironhide-chevron-right"></span>
+                                    </a>
+                                    <!-- Indicators -->
+                                    <ol class="carousel-indicators bottom--xxl">
+                                        <li data-target="#carousel-reviews" data-slide-to="0" class="active"></li>
+                                        <li data-target="#carousel-reviews" data-slide-to="1"></li>
+                                        <li data-target="#carousel-reviews" data-slide-to="2"></li>
+                                        <li data-target="#carousel-reviews" data-slide-to="3"></li>
+                                        <li data-target="#carousel-reviews" data-slide-to="4"></li>
+                                    </ol>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 text-center">
+                                <h2 class="title">Our awards!</h2>
+                                <a class="img-link" href="https://jayisgames.com/best-of/2011/game-of-the-year/" target="_blank" title="Game of the Year 2011 at Casual Gameplay">
+                                    <img class="mma" src="Images/awards/badge_casualgameplay_goty.png">
+                                </a>
+                                <a class="img-link" href="https://jayisgames.com/best-of/2011/defense-strategy-results/" target="_blank" title="Best Strategy Game 2011 at Casual Gameplay">
+                                    <img class="mma" src="Images/awards/badge_casualgameplay_beststrategy.png">
+                                </a>
+                                <a class="img-link" href="https://wireless.ign.com/articles/121/1217601p1.html" target="_blank" title="IGN Editors' Choice 9.5/10">
+                                    <img src="Images/awards/badge_ign.png">
+                                </a>
+                                <a class="img-link" href="https://www.slidetoplay.com/story/kingdom-rush-ipad-review" target="_blank" title="Slide2Play Must Have!">
+                                    <img src="Images/awards/badge_slide2play.png">
+                                </a><br>
+                                <a class="img-link" href="https://www.148apps.com/reviews/kingdom-rush-review/" target="_blank" title="148Apps Editor's Choice 4.5/5">
+                                    <img src="Images/awards/badge_148apps.png">
+                                </a>
+                                <a class="img-link" href="https://www.pocketgamer.co.uk/r/iPad/Kingdom+Rush/review.asp?c=36437" target="_blank" title="PocketGamer Gold Award">
+                                    <img src="Images/awards/badge_pocketgamer.png" width="80" height="70">
+                                </a>
+                                <a class="ib vtop img-link" id="metascore" href="https://www.metacritic.com/game/ios/kingdom-rush" target="_blank" style="width:80px; height:70px">
+                                    <span class="ib">
+                                        90
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-10 col-lg-offset-1">
+                <div class="container">
+                    <div class="row m-v-m">
+                        <div id="carousel-featured" class="carousel slide">
+                            <div class="col-sm-5 col-sm-push-7">
+                                <h2 class="title">Features</h2>
+                                <p class="lead upper m-t-l m-b-m">overview</p>
+                                <div class="carousel-text-item">
+                                    <p class="description m-b-xl">
+                                        Fight on forests, mountains and wastelands, customizing your defensive strategy with different tower upgrades and specializations!<br> <br>Rain fire upon your enemies, summon reinforcements, command your troops, recruit elven warriors and face legendary monsters on a quest to save the Kingdom from the forces of darkness!
+                                    </p>
+                                </div>
+                                <div class="carousel-text-item none">
+                                    <p class="description m-b-xl">
+                                        All basic towers can further be upgraded to specialized towers like: Rangers, Holy Paladins, Arcane Wizards, Tesla and more...
+                                    </p>
+                                    <p class="description m-b-xl">
+                                        Customize your towers with up to 18 special abilities! Poison Arrows, Sniper Shots, Teleportation, Earth Elementals, Holy Strikes and Polymorph to name a few!
+                                    </p>
+                                </div>
+                                <div class="carousel-text-item none">
+                                    <p class="description m-b-xl">
+                                        Test your might against bloodthirsty orcs, mountain trolls, evil necromancer, scores of demons and more. All with special abilities that bring a new dimension to the TD genre!
+                                    </p>
+                                </div>
+                                <div class="carousel-text-item none">
+                                    <p class="description m-b-xl">
+                                        Deploy your troops! Take command of your infantry men while raining fire upon your enemies and reinforcing your weak spots.<br><br>
+                                        Make constant tactical choices to endure the challenges and protect your Kingdom!
+                                    </p>
+                                </div>
+                                <div class="carousel-text-item none">
+                                    <p class="description m-b-xl">
+                                        With over 30 upgrades and a mighty arsenal of warriors, mages, archers and crazy dwarves, there is no end to the many strategies and choices available at your disposal!<br><br> Welcome to Kingdom Rush!
+                                    </p>
+                                </div>
+                                <ol class="carousel-indicators featured-carousel-indicators">
+                                    <li data-target="#carousel-featured" data-slide-to="0" class="active"></li>
+                                    <li data-target="#carousel-featured" data-slide-to="1"></li>
+                                    <li data-target="#carousel-featured" data-slide-to="2"></li>
+                                    <li data-target="#carousel-featured" data-slide-to="3"></li>
+                                    <li data-target="#carousel-featured" data-slide-to="4"></li>
+                                </ol>
+                            </div>
+                            <div class="col-sm-7 text-center col-sm-pull-5">
+                                <div class="featured-frame rel">
+                                    <img class="img-responsive mma rel z2" src="Images/features/KR_Features_Frame.png" width="626" height="457">
+                                    <div class="featured-image abs">
+                                        <div class="carousel-inner">
+                                            <div class="item active" data-text-target="0">
+                                                <img class="img-responsive mma" src="Images/features/KR_Features_01.png">
+                                            </div>
+                                            <div class="item" data-text-target="1">
+                                                <img class="img-responsive mma" src="Images/features/KR_Features_02.png">
+                                            </div>
+                                            <div class="item" data-text-target="2">
+                                                <img class="img-responsive mma" src="Images/features/KR_Features_03.png">
+                                            </div>
+                                            <div class="item" data-text-target="3">
+                                                <img class="img-responsive mma" src="Images/features/KR_Features_04.png">
+                                            </div>
+                                            <div class="item" data-text-target="4">
+                                                <img class="img-responsive mma" src="Images/features/KR_Features_05.png">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="paper-bg">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 col-lg-offset-1">
+                    <div class="container">
+                        <div class="row m-v-m">
+                            <div id="carousel-screenshots" class="carousel  slide m-t-xl">
+                                <div class="col-sm-7 text-center col-sm-push-5">
+                                    <h2 class="title text-center visible-xs">Screenshots</h2>
+                                    <div class="screenshots-frame rel">
+                                        <img class="img-responsive mma rel" src="Images/screenshots/screen-dark-bg.png" width="609" height="447">
+                                        <div class="screenshots-image abs mma text-center">
+                                            <div class="carousel-inner">
+                                                <div class="item active" data-text-target="0">
+                                                    <a href="Images/screenshots/KR/screen_01.jpg" data-gallery="">
+                                                        <img class="img-responsive mma" src="Images/screenshots/KR/screen_01.jpg">
+                                                    </a>
+                                                </div>
+                                                <div class="item" data-text-target="1">
+                                                    <a href="Images/screenshots/KR/screen_02.jpg" data-gallery="">
+                                                        <img class="img-responsive mma" src="Images/screenshots/KR/screen_02.jpg">
+                                                    </a>
+                                                </div>
+                                                <div class="item" data-text-target="2">
+                                                    <a href="Images/screenshots/KR/screen_03.jpg" data-gallery="">
+                                                        <img class="img-responsive mma" src="Images/screenshots/KR/screen_03.jpg">
+                                                    </a>
+                                                </div>
+                                                <div class="item" data-text-target="3">
+                                                    <a href="Images/screenshots/KR/screen_04.jpg" data-gallery="">
+                                                        <img class="img-responsive mma" src="Images/screenshots/KR/screen_04.jpg">
+                                                    </a>
+                                                </div>
+                                                <div class="item" data-text-target="4">
+                                                    <a href="Images/screenshots/KR/screen_05.jpg" data-gallery="">
+                                                        <img class="img-responsive mma" src="Images/screenshots/KR/screen_05.jpg">
+                                                    </a>
+                                                </div>
+                                                <div class="item" data-text-target="5">
+                                                    <a href="Images/screenshots/KR/screen_06.jpg" data-gallery="">
+                                                        <img class="img-responsive mma" src="Images/screenshots/KR/screen_06.jpg">
+                                                    </a>
+                                                </div>
+                                                <div class="item" data-text-target="6">
+                                                    <a href="Images/screenshots/KR/screen_07.jpg" data-gallery="">
+                                                        <img class="img-responsive mma" src="Images/screenshots/KR/screen_07.jpg">
+                                                    </a>
+                                                </div>
+                                                <div class="item" data-text-target="7">
+                                                    <a href="Images/screenshots/KR/screen_08.jpg" data-gallery="">
+                                                        <img class="img-responsive mma" src="Images/screenshots/KR/screen_08.jpg">
+                                                    </a>
+                                                </div>
+                                                <div class="item" data-text-target="8">
+                                                    <a href="Images/screenshots/KR/screen_09.jpg" data-gallery="">
+                                                        <img class="img-responsive mma" src="Images/screenshots/KR/screen_09.jpg">
+                                                    </a>
+                                                </div>
+                                                <div class="item" data-text-target="9">
+                                                    <a href="Images/screenshots/KR/screen_10.jpg" data-gallery="">
+                                                        <img class="img-responsive mma" src="Images/screenshots/KR/screen_10.jpg">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <img src="Images/icons/icon-heroe.png" class="img-responsive abs screenshots-heroe">
+                                    </div>
+                                </div>
+                                <div class="col-sm-5 col-sm-pull-7">
+                                    <h2 class="title text-center hidden-xs">Screenshots</h2>
+                                    <div class="row">
+                                        <div class="col-sm-10 col-sm-offset-1">
+                                            <p class="description m-v-xl" style="text-align:center;">
+                                                Click any image<br> to see it in it's full glory!<br><br>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <ol class="carousel-indicators rel">
+                                            <li data-target="#carousel-screenshots" data-slide-to="0" class="active"></li>
+                                            <li data-target="#carousel-screenshots" data-slide-to="1"></li>
+                                            <li data-target="#carousel-screenshots" data-slide-to="2"></li>
+                                            <li data-target="#carousel-screenshots" data-slide-to="3"></li>
+                                            <li data-target="#carousel-screenshots" data-slide-to="4"></li>
+                                            <li data-target="#carousel-screenshots" data-slide-to="5"></li>
+                                            <li data-target="#carousel-screenshots" data-slide-to="6"></li>
+                                            <li data-target="#carousel-screenshots" data-slide-to="7"></li>
+                                            <li data-target="#carousel-screenshots" data-slide-to="8"></li>
+                                            <li data-target="#carousel-screenshots" data-slide-to="9"></li>
+                                        </ol>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-10 col-lg-offset-1">
+                <div class="container">
+                    <div class="row m-v-m">
+                        <div id="carousel-special-features" class="carousel slide fad">
+                            <div class="col-sm-7 text-center">
+                                <h2 class="title visible-xs">Special Features</h2>
+                                <div class="special-features-frame rel">
+                                    <div class="special-features-image">
+                                        <div class="carousel-inner">
+                                            <div class="item active" data-text-target="0">
+                                                <img class="img-responsive mma" src="Images/special-features/comicbook.png">
+                                            </div>
+                                            <div class="item" data-text-target="1">
+                                                <a href="/strategy.html">
+                                                    <img class="img-responsive mma" src="Images/special-features/kr-strategy-guide-image.png">
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-5">
+                                <h2 class="title hidden-xs">Special Features:</h2>
+                                <div class="carousel-text-item" style="display: block;">
+                                    <h3 class="subtitle">Comic Book</h3>
+                                    <p class="description m-b-xl">Based on the iOS hit game KINGDOM RUSH, comes this epic story that lets you live the universe of Kingdom Rush in an awesome and fun experience!!! </p>
+                                    <p class="description m-b-xl">Prepare yourself for this epic journey into the world of KINGDOM RUSH!!!</p>
+                                    <p>
+                                        <a href="https://itunes.apple.com/us/app/kingdom-rush-the-comic/id558612915?mt=8&amp;uo=4&amp;at=11l5VB&amp;ct=KRF-ComicHome"><img src="Images/icons/appstore.png"></a>
+                                    </p>
+                                </div>
+                                <div class="carousel-text-item none" style="display: none;">
+                                    <h3 class="subtitle">Strategy Guide</h3>
+                                    <p class="description m-b-xl">
+                                        Having trouble getting those 3 stars? Check out the official strategy guide and get and edge when facing the baddies!
+                                    </p>
+                                    <a href="/strategy.html" class="btn btn-active">CHECK THE GUIDE</a>
+                                </div>
+                                <ol class="carousel-indicators special-features-carousel-indicators">
+                                    <li data-target="#carousel-special-features" data-slide-to="0" class="active"></li>
+                                    <li data-target="#carousel-special-features" data-slide-to="1" class=""></li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="paper-bg paper-end">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 col-lg-offset-1">
+                    <div class="container">
+                        <div class="row">
+                            <div class="m-t-xl col-md-5 col-sm-9 col-sm-offset-2 col-md-offset-0 col-md-push-7">
+                                <h4 class="title">Get Social</h4>
+                                <p class="description m-b-xl p-r-m">Love Kingdom Rush? Why not meet up with us on twitter, facebook or YouTube? Drop by and say hello!</p>
+                            </div>
+                            <div class="col-sm-12 text-center col-md-7 col-md-pull-5 m-t-xl">
+                                <div class="thumbnails">
+                                    <a href="https://twitter.com/ironhidegames" target="_blank">
+                                        <img class="m-h--s" src="Images/icons/social-twitter.png">
+                                    </a>
+                                    <a href="https://www.facebook.com/ironhidegames" target="_blank">
+                                        <img class="m-h--s" src="Images/icons/social-facebook.png">
+                                    </a>
+                                    <a href="https://www.youtube.com/user/IRONHIDEGAMES" target="_blank">
+                                        <img class="m-h--s" src="Images/icons/social-youtube.png">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer footer-gradient">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 col-lg-offset-1">
+                    <div class="container">
+                        <div class="row p-v-m">
+                            <div class="col-sm-2 text-center">
+                                <a href="https://www.ironhidegames.com/"><img class="m-r-l" src="Images/corporate/ironhide-logo.png"></a>
+                            </div>
+                            <div class="col-sm-8">
+                                <p class="p-t-xl text-center text-lg-left">
+                                    Copyright © 2013 <a href="https://www.ironhidegames.com/" class="highlight">Ironhide Game Studio.</a> All rights reserved. <!-- | <span class="highlight">Sitemap</span> -->
+                                </p>
+                                <ul class="p0 list-inline small text-lg-left">
+                                    <li class="first">
+                                        <a href="">Home</a>
+                                    </li>
+                                    <li>
+                                        <a href="/strategy.html">Strategy Guide</a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.kingdomrushfrontiers.com/home.html">Kingdom Rush Frontiers</a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.ironhidegames.com/">Developer Website</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-sm-2">
+                                <p class="text-center p-t-s">
+                                    Site designed by  <a target="_blank" href="https://www.fullyillustrated.com/"><img class="mma" src="Images/corporate/fully-illustrated.png"></a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="Scripts/Vendor/jquery-1.10.2.js"></script>
+    <script src="Scripts/Vendor/bootstrap.js"></script>
+    <script src="Scripts/Vendor/jquery.blueimp-gallery.js"></script>
+    <script src="Scripts/Vendor/bootstrap-image-gallery.js"></script>
+    <script src="Scripts/Vendor/respond.js"></script>
+    <script src="Scripts/main.js"></script>
+
+
+</body></html>
